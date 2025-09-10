@@ -49,7 +49,7 @@ Git керує файлами проєкту та відстежує зміни 
 
 Вводжу свою електронну пошту командою `git config --global user.email "instantubique@gmail.com"`, щоб налаштувати її для ідентифікації.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/1.png?raw=true)
 
 Вводимо команди для налаштування обробки кінців рядків у Git для Windows:
 
@@ -61,13 +61,13 @@ git config --global core.safecrlf warn
 - `git config --global core.autocrlf true` — автоматично конвертує кінці рядків у формат LF при коміті, щоб у репозиторії була уніфікована система.
 - `git config --global core.safecrlf warn` — попереджатиме, якщо конвертація може призвести до незворотних змін у файлі.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/2.png?raw=true)
 
 Налаштування виконано. Це допоможе уникнути проблем з форматуванням тексту при спільній роботі з людьми на різних ОС.
 
 Вводимо команду `git config --global init.defaultBranch main`, щоб налаштувати гілку за замовчуванням з назвою `main` при створенні нового репозиторію.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/3.png?raw=true)
 
 Налаштування виконано. Це узгоджує локальні налаштування Git з сучасними стандартами хмарних сервісів.
 
@@ -75,13 +75,13 @@ git config --global core.safecrlf warn
 
 Перевіряємо поточну директорію командою `pwd`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/4.png?raw=true)
 
 Якщо потрібно, переходимо в кореневу директорію проекту командою `cd "шлях/до/директорії"`.
 
 Ініціалізуємо новий порожній репозиторій Git командою `git init` у поточній директорії.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/5.png?raw=true)
 
 Репозиторій успішно створено. Тепер поточна папка знаходиться під версійним контролем Git.
 
@@ -91,15 +91,16 @@ git config --global core.safecrlf warn
 echo "Hello, World!" > hello.html
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/6.png?raw=true)
 
 Відкриваємо файл у VS Code командою:
 
 ```bash
 code hello.html
 ```
-![placeholder](https://markdowntoword.io/placeholder.png)
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/7.png?raw=true)
+>
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/8.png?raw=true)
 
 Файл створено та готовий для роботи з Git.
 
@@ -115,13 +116,13 @@ git add hello.html
 git commit -m "Initial commit"
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/9.png?raw=true)
 
 Файл `hello.html` тепер під версійним контролем Git. Перший коміт у репозиторії створено.
 
 Перевіряємо стан репозиторію командою `git status`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/10.png?raw=true)
 
 Це означає, що у робочій директорії немає незафіксованих змін, і репозиторій "чистий".
 
@@ -129,15 +130,15 @@ git commit -m "Initial commit"
 
 Перевіряємо стан репозиторію командою `git status`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/11.png?raw=true)
 
 Результат покаже, що файл `hello.html` було змінено.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/12.png?raw=true)
 
 Переглядаємо конкретні зміни у файлі командою `git diff`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/13.png?raw=true)
 
 У виводі побачимо рядки, видалені котом (-) та додані ним рядки (+).
 
@@ -151,7 +152,7 @@ git restore hello.html
 
 Перевіряємо стан репозиторію командою `git status`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/14.png?raw=true)
 
 Зміни кота успішно скасовано. Робоча директорія чиста.
 
@@ -161,7 +162,7 @@ git restore hello.html
 echo "<head>Hello, World!</head>" > hello.html
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/15.png?raw=true)
 
 Додаємо зміни до staging area командою:
 
@@ -177,7 +178,7 @@ git restore --staged hello.html
 
 Перевіряємо статус:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/16.png?raw=true)
 
 Зміни все ще у робочій директорії, але не в staging.
 
@@ -189,7 +190,7 @@ git restore .
 
 Фінальна перевірка статусу:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/17.png?raw=true)
 
 Файл повернуто до оригінального стану. Помилка виправлена.
 
@@ -199,7 +200,7 @@ git restore .
 echo "<h1>Hello, World!</h1>" > hello.html
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/18.png?raw=true)
 
 Додаємо зміни до staging area:
 
@@ -221,7 +222,7 @@ git commit --amend -m "Added H1, HTML, and BODY tags to hello.html"
 
 Додаємо HTML-структуру до файлу:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/19.png?raw=true)
 
 Додаємо оновлені зміни до staging area:
 
@@ -235,14 +236,14 @@ git add hello.html
 git commit --amend -m "Added H1, HTML, and BODY tags to hello.html"
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/20.png?raw=true)
 
 Всі зміни об'єднано в один коміт з точним описом.
 
 ### Мітки та гілки
 Переглядаємо історію комітів командою `git log`.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/21.png?raw=true)
 
 Кожен коміт має унікальний SHA-1 хеш (наприклад, 346ca09...), який використовується для посилання на конкретную версію.
 
@@ -260,7 +261,7 @@ git tag 1.0
 git tag
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/22.png?raw=true)
 
 Тег успішно додано. Тепер коміт можна легко знайти за зрозумілою назвою версії замість SHA-1 хешу.
 
@@ -270,7 +271,7 @@ git tag
 git branch
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/23.png?raw=true)
 
 Зараз у нас є лише одна гілка `main` (позначена зірочкою як поточна).
 
@@ -288,19 +289,19 @@ git branch
 
 Створюємо нову гілку `style` і переходимо на неї:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/24.png?raw=true)
 
 Створюємо файл `style.css` з вмістом:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/25.png?raw=true)
 
 Додаємо файл до staging area та комітимо:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/26.png?raw=true)
 
 Оновлюємо `hello.html`, додаючи посилання на CSS:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/27.png?raw=true)
 
 Додаємо зміни до staging area та комітимо.
 
@@ -322,11 +323,11 @@ git switch style
 
 Переходимо на гілку `main`. Виконуємо злиття гілки `style` у `main`:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/28.png?raw=true)
 
 Перевіряємо наявність файлу `style.css` за допомогою команди `ls`:
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/29.png?raw=true)
 
 Файл `style.css` тепер у гілці `main`.
 
@@ -344,7 +345,7 @@ git log
 git branch -d style
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/30.png?raw=true)
 
 Гілка `style` успішно злита з `main` і видалена.
 
@@ -354,7 +355,7 @@ git branch -d style
 git log --oneline
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/31.png?raw=true)
 
 Експериментуємо з фільтрами та форматуванням:
 
@@ -368,7 +369,7 @@ git log --oneline
 git log --format="%h %ad | %s%d [%an]" --date=short
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/32.png?raw=true)
 
 Встановлюємо цей формат за замовчуванням для поточного репозиторію:
 
@@ -377,7 +378,7 @@ git config format.pretty "%h %ad | %s%d [%an]"
 git config log.date short
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/33.png?raw=true)
 
 Тепер історія комітів виводиться зручно та інформативно.
 
@@ -395,7 +396,7 @@ git log hello.html
 git log style.css
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/34.png?raw=true)
 
 Порівнюємо зміни між тегом `1.0 `та поточним станом (`HEAD`):
 
@@ -403,7 +404,7 @@ git log style.css
 git diff 1.0 HEAD
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/35.png?raw=true)
 
 - `-` — видалені рядки (у старій версії 1.0).
 
@@ -417,7 +418,7 @@ git diff 1.0 HEAD
 
 Додаємо рядок `<p>This is a bug!</p>` у тіло документа.
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/36.png?raw=true)
 
 Стейджимо та комітимо зміни:
 
@@ -428,7 +429,7 @@ git commit -m "Introduced a bug"
 
 Додаємо ще один коміт (DOCTYPE):
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/37.png?raw=true)
 
 ```bash
 git add hello.html
@@ -449,7 +450,7 @@ git revert <commit>
 
 (У редакторі зберігаємо стандартне повідомлення коміту revert).
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/38.png?raw=true)
 
 Перевіряємо зміни після revert:
 
@@ -463,8 +464,9 @@ git diff HEAD^ HEAD
 git diff HEAD^
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/39.png?raw=true)
+>
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/40.png?raw=true)
 
 Створюємо гілку `experiment` і переходимо на неї:
 
@@ -509,7 +511,7 @@ git reset --hard main
 rm experiment.html
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/41.png?raw=true)
 
 Перевіряємо статус:
 
@@ -517,7 +519,7 @@ rm experiment.html
 git status
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/42.png?raw=true)
 
 Тепер гілка `experiment` чиста і ідентична `main`.
 
@@ -563,7 +565,7 @@ git switch main
 git remote add origin https://github.com/gn4r4/gitbybit.git
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/43.png?raw=true)
 
 Перевіряємо успішність додавання:
 
@@ -571,7 +573,7 @@ git remote add origin https://github.com/gn4r4/gitbybit.git
 git remote -v
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/44.png?raw=true)
 
 Тепер локальний репозиторій пов'язано з віддаленим на GitHub!
 
@@ -581,7 +583,7 @@ git remote -v
 git push origin main
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/45.png?raw=true)
 
 Після успішного виконання:
 
@@ -594,7 +596,7 @@ git push origin main
 git pull origin main
 ```
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/46.png?raw=true)
 
 Ця команда:
 
@@ -635,6 +637,6 @@ git pull origin main
 
 ### Кінець
 
-![placeholder](https://markdowntoword.io/placeholder.png)
+>![placeholder](https://github.com/gn4r4/gitbybit/blob/main/images/47.png?raw=true)
 
 
